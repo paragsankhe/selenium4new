@@ -1,0 +1,36 @@
+Notes : Selenium4 
+
+1.Create new Maven project > Add dependencies for WebDriverManager and Selenium4 and TestnG Then Maven > update project
+2.Create testng.xml file
+3.New Testng Class > Start with @test method 
+
+Use of WebDriverManager :
+ WebDriverManager.chromedriver().setup();
+ WebDriver driver = new ChromeDriver();
+ 
+Features :
+1. Taking screenshot of webelement 
+- Find that elements locator 
+- Store it in WebElement 
+- element.getScreenshotAs(OutputType.file)
+- Create File object variable
+
+ WebElement logo = driver.findElement(By.xpath("//i[@class='fb_logo img sp_PtoC_M4ckZu sx_a6eeb2'])"));
+ File file =  logo.getScreenshotAs(OutputType.FILE);
+ File destfile = new File("C:\\filename.png");
+ FileUtils.copyFile(file, destfile);
+
+2. Opening new window and new tab in browser 
+driver.switchTo().newWindow(WindowType.TAB);
+driver.navigate().to("https://www.google.com");
+driver.switchTo().newWindow(WindowType.WINDOW);
+driver.navigate().to("https://www.google.com");
+
+3. Element Height.width,x and y coordinate finding 
+
+System.out.println("Height is " + logo.getRect().getDimension().getHeight());
+System.out.println("Width is " + logo.getRect().getDimension().getWidth());
+System.out.println("X is " + logo.getRect().getX());
+System.out.println("Y is " + logo.getRect().getY());
+
+

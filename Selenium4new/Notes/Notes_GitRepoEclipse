@@ -1,0 +1,10 @@
+Notes :
+
+1.Create a repo in github
+2.Clone a repository in Eclipse (Github URL)
+3.Give Path of local repo 
+4.Finish 
+5.Right click project > team > share >Select local repo frm drpdwn 
+6.Pushing to Remote repo > Rightclick local repo 
+7.Add to index 
+8.Right click > commit >commit and push
