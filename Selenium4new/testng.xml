@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Sel4">
+<test name = "Sel4" >
+<classes>
+<class name = "com.seleniumfeatures.Features1"/>
+</classes>
+</test>
+</suite>
